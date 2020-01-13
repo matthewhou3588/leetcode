@@ -60,5 +60,9 @@ class Solution(object):
         for i, node in enumerate(tmp):
             if i < len(tmp) - 1:
                 node.next = tmp[i+1]
+            else:
+                if flag == 1:
+                    node.next = ListNode(1)
+            
             
         return tmp[0]
